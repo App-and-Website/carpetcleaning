@@ -912,4 +912,7 @@
 .main-menu .main-menu__list>li>a::before, .stricky-header .main-menu__list>li>a::before {
     display: none!important;
 }
-
+.main-menu__search {
+    height: 42px;
+    width: 42px;
+}
