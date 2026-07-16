@@ -908,3 +908,8 @@
 }
 }
 
+
+.main-menu .main-menu__list>li>a::before, .stricky-header .main-menu__list>li>a::before {
+    display: none!important;
+}
+
