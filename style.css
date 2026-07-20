@@ -977,3 +977,41 @@
   object-fit: cover;
   border-radius: 12px;
 }
+
+
+.page_header_custom{
+    margin-top: 90px;
+}
+.about-two__counter-count span {
+    font-size: 36px;
+    width: 24px;
+}
+.odometer-auto-theme{
+    margin-right: 10px;
+}
+.about-two__left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.services-three__tab-buttons-box {
+    margin: 0;
+}
+.services-three__main-tab-box .tab-buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.services-three__main-tab-box .tab-buttons .tab-btn {
+    max-width: 100%;
+    width: 100%;
+}
+.services-three__tab-buttons-single {
+    padding: 30px 16px 25px;
+    max-width: 100%;
+}
+.services-three__tab-buttons-single p {
+    margin-top: 10px;
+   color: #ccc;
+}
