@@ -1193,3 +1193,25 @@
    }
 }
 
+
+.blog-details__meta-list {
+    background-color: #fff;
+    padding: 0px !important;
+}
+.blog-details__meta-list li .icon {
+    width: 30px;
+    height: 30px;
+    border: 0px solid #D6DBFF;
+}
+.blog-details__meta-list li {
+    gap: 2px;
+}
+.sidebar__subscribe h3{
+    color: #222!important;
+}
+.sidebar__subscribe p{
+    color: #444;
+}
+.blog-details__left {
+    margin-right: 0px;
+}
