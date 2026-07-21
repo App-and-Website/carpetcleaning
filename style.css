@@ -1215,3 +1215,272 @@
 .blog-details__left {
     margin-right: 0px;
 }
+
+
+
+
+.pscThankYouSection{
+    padding:90px 15px;
+    background:#f8fbff;
+}
+
+.pscThankYouContainer{
+    max-width:1100px;
+    margin:auto;
+}
+
+.pscThankYouBox{
+    background:#fff;
+    border-radius:22px;
+    padding:70px 55px;
+    text-align:center;
+    box-shadow:0 18px 50px rgba(0,0,0,.08);
+    position:relative;
+    overflow:hidden;
+}
+
+.pscThankYouBox:before{
+    content:"";
+    position:absolute;
+    width:320px;
+    height:320px;
+    background:rgba(1,76,143,.05);
+    border-radius:50%;
+    top:-180px;
+    left:-180px;
+}
+
+.pscThankYouBox:after{
+    content:"";
+    position:absolute;
+    width:280px;
+    height:280px;
+    background:rgba(19,154,74,.05);
+    border-radius:50%;
+    bottom:-160px;
+    right:-140px;
+}
+
+.pscThankYouIcon{
+    width:95px;
+    height:95px;
+    background:#139a4a;
+    border-radius:50%;
+    margin:0 auto 25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:42px;
+    position:relative;
+    z-index:2;
+}
+
+.pscThankYouLabel{
+    display:inline-block;
+    color:#139a4a;
+    font-weight:700;
+    letter-spacing:2px;
+    font-size:13px;
+    margin-bottom:12px;
+}
+
+.pscThankYouBox h1{
+    margin:0;
+    font-size:46px;
+    color:#111;
+}
+
+.pscThankYouText{
+    max-width:760px;
+    margin:25px auto 45px;
+    color:#666;
+    line-height:1.8;
+    font-size:16px;
+}
+
+.pscThankYouSteps{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-bottom:45px;
+}
+
+.pscThankYouStep{
+    padding:30px 25px;
+    border:1px solid #e8eef5;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.pscThankYouStep:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.pscStepIcon{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#014c8f;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    margin:0 auto 18px;
+}
+
+.pscThankYouStep h4{
+    margin:0 0 10px;
+    color:#111;
+    font-size:20px;
+}
+
+.pscThankYouStep p{
+    margin:0;
+    color:#666;
+    line-height:1.7;
+    font-size:15px;
+}
+
+.pscThankYouContact{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-bottom:45px;
+}
+
+.pscContactItem{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    border:1px solid #e8eef5;
+    border-radius:16px;
+    padding:22px;
+}
+
+.pscContactItem i{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#014c8f;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+}
+
+.pscContactItem span{
+    display:block;
+    color:#777;
+    font-size:14px;
+    margin-bottom:4px;
+}
+
+.pscContactItem strong{
+    color:#111;
+    font-size:17px;
+}
+
+.pscThankYouButtons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.pscBtnPrimary,
+.pscBtnSecondary{
+    text-decoration:none;
+    padding:15px 34px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+}
+
+.pscBtnPrimary{
+    background:#139a4a;
+    color:#fff;
+}
+
+.pscBtnPrimary:hover{
+    background:#0f853f;
+    color: #fff;
+}
+
+.pscBtnSecondary{
+    border:2px solid #014c8f;
+    color:#014c8f;
+}
+
+.pscBtnSecondary:hover{
+    background:#014c8f;
+    color:#fff;
+}
+
+@media(max-width:991px){
+
+    .pscThankYouBox{
+        padding:55px 35px;
+    }
+
+    .pscThankYouSteps{
+        grid-template-columns:1fr;
+    }
+
+    .pscThankYouContact{
+        grid-template-columns:1fr;
+    }
+
+    .pscThankYouBox h1{
+        font-size:38px;
+    }
+
+}
+
+@media(max-width:767px){
+
+    .pscThankYouSection{
+        padding:60px 15px;
+    }
+
+    .pscThankYouBox{
+        padding:40px 22px;
+    }
+
+    .pscThankYouIcon{
+        width:80px;
+        height:80px;
+        font-size:34px;
+    }
+
+    .pscThankYouBox h1{
+        font-size:30px;
+        line-height:1.3;
+    }
+
+    .pscThankYouText{
+        font-size:15px;
+    }
+
+    .pscContactItem{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .pscBtnPrimary,
+    .pscBtnSecondary{
+        width:100%;
+        justify-content:center;
+    }
+
+}
+
+
+
