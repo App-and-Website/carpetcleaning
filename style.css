@@ -1015,3 +1015,181 @@
     margin-top: 10px;
    color: #ccc;
 }
+
+
+.pscMissionVisionSection{
+    padding:50px 0;
+    background:#fff;
+}
+
+
+
+.pscMissionVisionHeading{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 55px;
+}
+
+.pscMissionVisionHeading span{
+    display:inline-block;
+    font-size:13px;
+    font-weight:700;
+    color:#0d8b4d;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+
+.pscMissionVisionHeading h2{
+    font-size:40px;
+    line-height:1.25;
+    font-weight:700;
+    color:#111;
+    margin:0 0 18px;
+}
+
+.pscMissionVisionHeading p{
+    font-size:16px;
+    line-height:1.8;
+    color:#666;
+    margin:0;
+}
+
+.pscMissionVisionGrid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.pscMissionCard{
+    position:relative;
+    background:#fff;
+    border:1px solid #e7e7e7;
+    border-top:5px solid #0d8b4d;
+    border-radius:18px;
+    padding:42px 38px;
+    transition:.35s;
+    overflow:hidden;
+}
+
+.pscMissionCard:before{
+    content:"";
+    position:absolute;
+    right:-60px;
+    top:-60px;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:rgba(1,76,143,.05);
+}
+
+.pscMissionCard:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+.pscMissionIcon{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#0d8b4d;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    margin-bottom:22px;
+}
+
+.pscMissionCard h3{
+    font-size:30px;
+    color:#111;
+    margin:0 0 18px;
+}
+
+.pscMissionCard p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.pscMissionCard ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.pscMissionCard ul li{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin-bottom:14px;
+    color:#333;
+    line-height:1.6;
+    font-size:15px;
+}
+
+.pscMissionCard ul li i{
+    color:#0d8b4d;
+    margin-top:3px;
+    font-size:15px;
+    flex-shrink:0;
+}
+
+@media(max-width:991px){
+  .pscMissionVisionGrid{
+        grid-template-columns:1fr;
+    }
+
+    .pscMissionVisionHeading h2{
+        font-size:33px;
+    }
+
+    .pscMissionCard{
+        padding:35px 30px;
+    }
+
+}
+
+@media(max-width:767px){
+
+    .pscMissionVisionHeading{
+        margin-bottom:40px;
+    }
+
+    .pscMissionVisionHeading h2{
+        font-size:28px;
+    }
+
+    .pscMissionVisionHeading p{
+        font-size:15px;
+    }
+
+    .pscMissionCard{
+        padding:28px 22px;
+    }
+
+    .pscMissionCard h3{
+        font-size:25px;
+    }
+
+    .pscMissionIcon{
+        width:60px;
+        height:60px;
+        font-size:26px;
+    }
+
+}
+
+@media (max-width:991px){
+   .services-three__main-tab-box .tab-buttons {
+     grid-template-columns: auto auto;
+   }
+}
+
+@media (max-width:576px){
+    .services-three__main-tab-box .tab-buttons {
+     grid-template-columns: auto;
+   }
+}
+
