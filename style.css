@@ -1483,4 +1483,232 @@
 }
 
 
+.before_after_gallery_row .col-xl-6{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.page-header__bg::before {
+    background: linear-gradient(180deg, rgba(0, 8, 24, 0.5) 0%, rgba(0, 6, 19, 0.9) 100%);
+}
+.custom_service_page_head h1{
+    color: #fff;
+}
+.custom_service_page_head p{
+    margin-top: 15px;
+    color: #ccc;
+}
+.custom_service_page_head .container{
+    display: flex;
+    justify-content: center;
+}
+.custom_service_page_head .page-header__inner{
+    max-width: 980px;
+}
+.custom_service_page_head  .page-header__inner {
+    padding: 100px 0 100px;
+}
+.service_benefits ul li{
+    margin-bottom: 10px;
+}
 
+.service_benefits ul{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.service_benefits ul li{
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+}
+
+.service_benefits ul li::before{
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #16a34a;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.steamProcessSection{
+    padding:60px 0;
+    background:#07161d;
+    position:relative;
+}
+
+.steamHeading{
+    text-align:center;
+    max-width:1100px;
+    margin:0 auto 30px;
+}
+
+.steamHeading span{
+    display:inline-block;
+    color:#3ecf8e;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
+
+.steamHeading h2{
+    color:#fff;
+    font-size:36px;
+    line-height:1.2;
+    margin-bottom:15px;
+}
+
+.steamHeading p{
+    color:#b9c4ca;
+    font-size:17px;
+    line-height:1.8;
+}
+
+.steamProcessGrid{
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    gap:30px;
+}
+
+/* Default: 3 cards per row */
+.steamCard{
+    grid-column:span 4;
+    background:#0d222b;
+    border:1px solid rgba(62,207,142,.15);
+    border-radius:18px;
+    padding:20px;
+    transition:.35s ease;
+    height:100%;
+}
+
+.steamCard:hover{
+    transform:translateY(-8px);
+    border-color:#3ecf8e;
+    box-shadow:0 18px 45px rgba(0,0,0,.35);
+}
+
+/* If there are exactly 5 cards,
+   make the last two half-width */
+.steamCard:nth-last-child(2):nth-child(4),
+.steamCard:nth-last-child(1):nth-child(5){
+    grid-column:span 6;
+}
+
+.steamTop{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.steamNo{
+    font-size:32px;
+    font-weight:800;
+    color:#3ecf8e;
+    line-height:1;
+}
+
+.steamIcon{
+    width:62px;
+    height:62px;
+    border-radius:50%;
+    background:#12352a;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+}
+
+.steamCard h3{
+    color:#fff;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.steamCard p{
+    color:#c5d0d5;
+    font-size:14px;
+    margin:0;
+}
+
+@media(max-width:991px){
+
+    .steamHeading h2{
+        font-size:34px;
+    }
+     .steamProcessGrid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .steamCard,
+    .steamCard:nth-last-child(2):nth-child(4),
+    .steamCard:nth-last-child(1):nth-child(5){
+        grid-column:span 1;
+    }
+
+}
+
+@media(max-width:767px){
+
+    .steamProcessSection{
+        padding:70px 0;
+    }
+
+    .steamHeading{
+        margin-bottom:45px;
+    }
+
+    .steamHeading h2{
+        font-size:28px;
+    }
+
+    .steamHeading p{
+        font-size:15px;
+    }
+
+    .steamProcessGrid{
+        gap:20px;
+    }
+
+    .steamCard{
+        padding:28px;
+    }
+
+    .steamCard h3{
+        font-size:21px;
+    }
+
+    .steamTop{
+        margin-bottom:22px;
+    }
+
+    .steamProcessGrid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .steamCard{
+        padding:28px;
+    }
+}
+
+
+.bfcontainercustom{
+    background: #f3f5f7;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+@media(max-width:767px){
+   .faq_section_serv{
+    margin-top: 40px;
+   }
+    .faq_section_serv .faq-one__text {
+     margin-bottom: 20px;
+}
+}
